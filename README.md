@@ -38,12 +38,7 @@ fullstack-dev-playground/
 ├─ .gitignore
 └─ README.md # ← this file
 
-yaml
-Copy code
 
-*(This structure mirrors the folders present in the repo — keep each project self-contained with its own README.)* :contentReference[oaicite:2]{index=2}
-
----
 
 ## ▶️ How to run projects (common cases)
 
@@ -55,16 +50,12 @@ npm install
 npm start                # or `node app.js` if start not configured
 # open http://localhost:3000 or the port you set
 For a React project
-bash
-Copy code
 cd project-folder
 npm install
 npm start                # runs local dev server (http://localhost:3000)
 For static HTML/CSS/JS
 Simply open the index.html in browser or use VS Code Live Server extension:
 
-text
-Copy code
 Right-click index.html → Open with Live Server
 For SQL scripts
 Use MySQL Workbench / pgAdmin to run .sql scripts. Include a README in each SQL folder explaining schema creation steps.
