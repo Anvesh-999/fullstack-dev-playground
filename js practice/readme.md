@@ -7,7 +7,7 @@ It uses a Spider-Man themed webpage to dynamically create and style HTML element
 
 🎯 Features
 
-Dynamic creation of HTML elements (e.g., <button>, <input>, <h1>).
+Dynamic creation of HTML elements 
 
 Adding and styling elements using JavaScript DOM methods.
 
