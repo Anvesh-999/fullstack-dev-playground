@@ -75,6 +75,8 @@ GET	/posts/:id	View a specific post
 GET	/posts/:id/edit	Form to edit a post
 PATCH	/posts/:id	Update a specific post
 DELETE	/posts/:id	Delete a specific post
+
+
 🧩 Example Data
 
 When you start the server, some sample posts are preloaded:
