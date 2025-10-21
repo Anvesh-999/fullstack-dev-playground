@@ -67,13 +67,21 @@ Open your browser
 Navigate to 👉 http://localhost:8080/posts
 
 📖 Available Routes
+
 HTTP Method	Route	Description
+
 GET	/posts	Display all posts
+
 GET	/posts/new	Form to create a new post
+
 POST	/posts	Create a new post
+
 GET	/posts/:id	View a specific post
+
 GET	/posts/:id/edit	Form to edit a post
+
 PATCH	/posts/:id	Update a specific post
+
 DELETE	/posts/:id	Delete a specific post
 
 
