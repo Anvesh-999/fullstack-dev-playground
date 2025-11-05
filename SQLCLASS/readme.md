@@ -40,3 +40,7 @@ Open the SQL files in your preferred SQL editor or PostgreSQL client to start pr
 📌 Contributing
 
 Contributions are welcome! If you have suggestions for additional exercises or improvements, feel free to fork this repository and submit a pull request.
+
+🧑‍💻 Author
+
+Anvesh Anumolu

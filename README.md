@@ -23,6 +23,7 @@
 
 ## 🗂️ Repo structure (high level)
 > Each top folder contains one or more focused mini-projects. Every project should ideally have its own `README.md`.
+```bash
 
 fullstack-dev-playground/
 ├─ Bootstrap/ # Bootstrap examples & templates
@@ -37,7 +38,7 @@ fullstack-dev-playground/
 ├─ js practice/ # general JS snippets
 ├─ .gitignore
 └─ README.md # ← this file
-
+```
 
 
 ## ▶️ How to run projects (common cases)
