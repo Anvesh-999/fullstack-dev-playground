@@ -120,11 +120,13 @@ Each SQL folder should include:
 
 👨‍💻 Author
 
-Anvesh Anumolu
-B.Tech Student | MERN Stack Developer 
-[🔗 GitHub]("https://github.com/Anvesh-999")
- [!LinkedIn]("https://www.linkedin.com/in/anvesh-anumolu-472a66291")
+Anvesh Anumolu | MERN Stack Developer 
 
+[🔗 GitHub](https://github.com/Anvesh-999)
+
+ [!LinkedIn](https://www.linkedin.com/in/anvesh-anumolu-472a66291)
+
+----
 
 ⭐ Contribute / Feedback
 
