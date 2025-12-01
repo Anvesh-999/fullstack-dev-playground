@@ -1,14 +1,15 @@
 import Product from "./product.jsx";
-import MsgBox from "./MsgBox.jsx";
 import './App.css'
 
 function App() {
   return(
     <>
-      <MsgBox name="Anvesh" userColor="red"/>
-      <MsgBox name="Rahul" userColor="blue"/>
+     <Product title="logitech Mx master" />
+     <Product title="Apple Pencil(2nd Gen)" />
+     <Product title="Zebronics Zeb-transformer"/>
+     <Product title="Petronics Toad 23"/>
     </>
   );
 }
 
-export default App
+export default App;
