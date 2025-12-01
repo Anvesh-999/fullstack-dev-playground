@@ -71,8 +71,8 @@ npm start  # or node app.js
 ```bash
 cd path/to/react-project
 npm install
-npm start
-# Open http://localhost:3000
+npm run dev
+# Open ex: http://localhost:3000 from the terminal
 ```
 
 
