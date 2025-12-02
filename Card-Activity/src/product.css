@@ -1,6 +1,9 @@
 .product{
     border: 1px solid black;
-    border-radius: 2rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    border-radius: 14px;
+    padding: 0 10px 0 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width: 250px;
+    height: 220px;
 }
