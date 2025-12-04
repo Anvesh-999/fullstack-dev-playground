@@ -2,30 +2,44 @@ import { useState } from "react";
 
 export default function LudoBoard() {
     const [moves,setMoves] = useState({red:0,blue:0,green:0,yellow:0});
+    const [arr,setArr] = useState(["no moves "]);
 
     let updateBlue = (color) => {
        setMoves((prevMoves) => {
         return {...prevMoves, blue: prevMoves.blue + 1};
+       });
+       setArr((prevArr) => {
+        return [...prevArr, "Blue moved "];
        });
     }
     let updateYellow = (color) => {
        setMoves((prevMoves) => {
         return {...prevMoves, yellow: prevMoves.yellow + 1};
        });
+       setArr((prevArr) => {
+        return [...prevArr, "Yellow moved "];
+       });
     }
     let updateRed = (color) => {
        setMoves((prevMoves) => {
         return {...prevMoves, red: prevMoves.red + 1};
+       });
+       setArr((prevArr) => {
+        return [...prevArr, "Red moved "];
        });
     }
     let updateGreen = (color) => {
        setMoves((prevMoves) => {
         return {...prevMoves, green: prevMoves.green + 1};
        });
+       setArr((prevArr) => {
+        return [...prevArr, "Green moved "];
+       });
     }
     return(
         <div>
             <h2>Lets Begin!</h2>
+           <p>{arr}</p> 
         <div>
             <p>Red count = {moves.red}</p>
             <button onClick={updateRed} style={{backgroundColor:"red", color:"white"}}>+1</button>
