@@ -4,13 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LikeButton from './LikeButton.jsx'
 import LudoBoard from './LudoBoard.jsx'
+import TodoList from './TodoList.jsx'
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-    <LudoBoard/>
+    <TodoList/>
+    {/* <LudoBoard/> */}
      {/* <h1>States in react</h1>
      <p><b>Count value is: {count}</b></p>
      <LikeButton/>
