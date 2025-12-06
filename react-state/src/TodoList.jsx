@@ -5,6 +5,7 @@ export default function TodoList() {
     let [todos, setTodos] = useState([{task:"Sample Task", id:uuidv4()}]);
     let [newTodo, setNewTodo] = useState("");
     let addNewTask = () => {
+        if (!newTodo.trim()) return;
         setTodos((prevTodos)=>{
             return [...prevTodos, {task: newTodo, id: uuidv4()}];
         });
@@ -15,14 +16,12 @@ export default function TodoList() {
     }
 
     let deleteTodo = (id) => {
-        setTodos((prevTodos)=>{
-            return todos.filter((prevTodos)=> prevTodos.id !== id)
-        });
+        setTodos(prevTodos=> prevTodos.filter(todo=> todo.id !== id));
     }
 
     let upperCaseAll=()=>{
-        setTodos((todos)=>(
-            todos.map((todo)=>{
+        setTodos((prevTodos)=>(
+            prevTodos.map((todo)=>{
             return {
                 ...todo,
                 task:todo.task.toUpperCase()
@@ -31,6 +30,29 @@ export default function TodoList() {
     ));
     }
 
+    let upperCaseOne=(id)=>{
+        setTodos((prevTodos)=>
+            prevTodos.map((todo)=>{
+                if(todo.id === id){
+            return {
+                ...todo,
+                task:todo.task.toUpperCase()
+            }
+        }else{
+            return todo;
+        }
+        })
+    );
+    }
+    let markAsDone=(id)=>{
+        setTodos(prevTodos =>
+    prevTodos.map(todo =>
+      todo.id === id
+        ? { ...todo, isDone: !todo.isDone } 
+        : todo
+    )
+  );
+    }
     return(
         <div>
             <input type="text" name="todo" placeholder="Add a task" onChange={updateTodoValue} value={newTodo}/>
@@ -42,8 +64,12 @@ export default function TodoList() {
            <ul>
             {todos.map((todo)=>(
                  <li key={todo.id}>
-                    <span>{todo.task}</span>&nbsp;&nbsp;
+                    <span style={{ textDecoration: todo.isDone ? "line-through" : "none" }}>
+                        {todo.task}{todo.isDone}
+                        </span>&nbsp;&nbsp;
                     <button onClick={()=>{deleteTodo(todo.id)}}>Delete</button>
+                    <button onClick={()=>upperCaseOne(todo.id)}> upperCase one</button>
+                    <button onClick={()=>markAsDone(todo.id)}> Mark as done</button>
                     <br />
                     <br />
                     </li>
