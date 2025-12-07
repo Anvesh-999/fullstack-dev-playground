@@ -79,7 +79,9 @@ npm install
 npm run dev
 ```
 The project will start on:
-```bash 👉 http://localhost:5173 ```
+```bash 
+👉 http://localhost:5173 
+```
 ----
 📦 Component Documentation
 
@@ -104,7 +106,9 @@ How it Works:
 
 State Visualization:
 ```bash  
-let [liked, setLiked] = useState(false);  ```
+let [liked, setLiked] = useState(false); 
+ ```
+ 
 ----
 🎲 LudoBoard Component
 
