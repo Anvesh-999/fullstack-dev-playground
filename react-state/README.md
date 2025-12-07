@@ -4,6 +4,7 @@ A React + Vite project demonstrating different types of state management using u
 This playground includes examples such as a Like Button, a Ludo move tracker, and a fully functional Todo List.
 
 Perfect for beginners practicing React state updates, immutability, and UI re-rendering.
+
 ----
 
 📁 Components Overview
@@ -79,61 +80,71 @@ npm run dev
 ```
 The project will start on:
 ```bash 👉 http://localhost:5173 ```
-
+----
 📦 Component Documentation
 
 Below is a breakdown of each component with code explanation.
-----
+
+
 ❤️ LikeButton Component
+
 File: LikeButton.jsx
+
 Purpose:
 
 A heart icon that toggles between liked (solid red) and unliked (regular outline).
 
 How it Works:
 
-liked state stores whether the button is active
+- liked state stores whether the button is active
 
-Clicking the icon toggles the boolean
+- Clicking the icon toggles the boolean
 
-Uses FontAwesome icons for display
+- Uses FontAwesome icons for display
 
 State Visualization:
-```bash  let [liked, setLiked] = useState(false);  ```
+```bash  
+let [liked, setLiked] = useState(false);  ```
 ----
 🎲 LudoBoard Component
+
 File: LudoBoard.jsx
+
 Purpose:
 
-Tracks move counts for each Ludo color and logs each move.
+- Tracks move counts for each Ludo color and logs each move.
 
 State Used:
 ```bash
 const [moves, setMoves] = useState({ red: 0, blue: 0, green: 0, yellow: 0 });
 const [arr, setArr] = useState(["no moves"]);
 ```
-Features
+```Features```
 
-Track moves per color
+- Track moves per color
 
-Maintain history of moves
+- Maintain history of moves
 
-Display all moves in a log
+- Display all moves in a log
 
-Demonstrates functional updates for safe state mutation
+- Demonstrates functional updates for safe state mutation
+
 ----
+
 📝 TodoList Component
+
 File: TodoList.jsx
+
 Purpose:
 
-Full Todo List with adding, deleting, and marking tasks as done.
+- Full Todo List with adding, deleting, and marking tasks as done.
 
 State Used:
 ```bash
 let [todos, setTodos] = useState([{ task: "Sample Task", id: uuidv4(), isDone: false }]);
 let [newTodo, setNewTodo] = useState("");
 ```
-Features
+```Features```
 
 - Add new task
 
@@ -154,4 +165,5 @@ Feel free to fork this repo and experiment with more state-based components.
 PRs are welcome!
 
 👤 Author
- Anvesh Anumolu
+
+-  Anvesh Anumolu
