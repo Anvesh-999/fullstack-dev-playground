@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 export default function TodoList() {
-    let [todos, setTodos] = useState([{task:"Sample Task", id:uuidv4()}]);
+    let [todos, setTodos] = useState([{task:"Sample Task", id:uuidv4(),isDone:false}]);
     let [newTodo, setNewTodo] = useState("");
     let addNewTask = () => {
         if (!newTodo.trim()) return;
         setTodos((prevTodos)=>{
-            return [...prevTodos, {task: newTodo, id: uuidv4()}];
+            return [...prevTodos, {task: newTodo, id: uuidv4(),isDone:false}];
         });
         setNewTodo("");
     }
@@ -19,24 +19,24 @@ export default function TodoList() {
         setTodos(prevTodos=> prevTodos.filter(todo=> todo.id !== id));
     }
 
-    let upperCaseAll=()=>{
+    let markAllDone=()=>{
         setTodos((prevTodos)=>(
             prevTodos.map((todo)=>{
             return {
                 ...todo,
-                task:todo.task.toUpperCase()
+                isDone:true
             }
         })
     ));
     }
 
-    let upperCaseOne=(id)=>{
+    let markAsDone=(id)=>{
         setTodos((prevTodos)=>
             prevTodos.map((todo)=>{
-                if(todo.id === id){
+            if(todo.id === id){
             return {
                 ...todo,
-                task:todo.task.toUpperCase()
+                isDone:true
             }
         }else{
             return todo;
@@ -44,15 +44,7 @@ export default function TodoList() {
         })
     );
     }
-    let markAsDone=(id)=>{
-        setTodos(prevTodos =>
-    prevTodos.map(todo =>
-      todo.id === id
-        ? { ...todo, isDone: !todo.isDone } 
-        : todo
-    )
-  );
-    }
+
     return(
         <div>
             <input type="text" name="todo" placeholder="Add a task" onChange={updateTodoValue} value={newTodo}/>
@@ -64,19 +56,18 @@ export default function TodoList() {
            <ul>
             {todos.map((todo)=>(
                  <li key={todo.id}>
-                    <span style={{ textDecoration: todo.isDone ? "line-through" : "none" }}>
+                    <span style={ todo.isDone ? { textDecorationLine: 'line-through' } : {}}>
                         {todo.task} 
                         </span>&nbsp;&nbsp;
                     <button onClick={()=>{deleteTodo(todo.id)}}>Delete</button>
-                    <button onClick={()=>upperCaseOne(todo.id)}> upperCase one</button>
-                    <button onClick={()=>markAsDone(todo.id)}> Mark as done</button>
+                    <button onClick={()=>markAsDone(todo.id)}> Mark as Done</button>
                     <br />
                     <br />
                     </li>
             ))}
            </ul>
            <br />
-           <button onClick={upperCaseAll}>UpperCase all Tasks</button>
+           <button onClick={markAllDone}>Mark all as Done</button>
         </div>
         )
 }
