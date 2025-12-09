@@ -1,6 +1,7 @@
 🎉 Lottery Game — React Mini-Project
 
 A fun and interactive React-based Lottery Game where players generate random tickets and test their luck against a winning condition. This project showcases clean component design, reusable UI patterns, and basic game logic — perfect for beginners exploring React or developers sharpening their frontend fundamentals.
+
 ---
 🚀 Features
 
@@ -18,6 +19,7 @@ Clean, component-scoped CSS for a polished look.
 
 ⚛️ Built With React
 Utilizing functional components and modern hooks (if applicable).
+
 ----
 🛠️ Technologies Used
 React (Vite)
