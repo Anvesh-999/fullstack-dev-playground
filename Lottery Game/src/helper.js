@@ -6,4 +6,12 @@ function genTicket(n) {
     return arr;
 }
 
-export { genTicket };
+function sum(arr){
+    let total=0;
+    for(let i of arr){
+        total+=i;
+    }
+    return total;
+}
+
+export { genTicket ,sum};
