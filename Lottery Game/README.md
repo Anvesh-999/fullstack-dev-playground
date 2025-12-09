@@ -1,16 +1,72 @@
-# React + Vite
+🎉 Lottery Game — React Mini-Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive React-based Lottery Game where players generate random tickets and test their luck against a winning condition. This project showcases clean component design, reusable UI patterns, and basic game logic — perfect for beginners exploring React or developers sharpening their frontend fundamentals.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎲 Random Ticket Generation
+Each play produces a unique set of numbers.
 
-## React Compiler
+🧩 Modular Component Structure
+Reusable components like <TicketNum /> and <Ticket />.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🟢 Instant Win/Lose Feedback
+Winning condition is evaluated immediately.
 
-## Expanding the ESLint configuration
+🎨 Custom Styling
+Clean, component-scoped CSS for a polished look.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚛️ Built With React
+Utilizing functional components and modern hooks (if applicable).
+
+
+🛠️ Technologies Used
+React (Vite)
+
+JavaScript (ES6+)
+
+CSS3
+
+Vite (fast dev server + bundling)
+
+----
+
+▶️ Getting Started
+
+1. Clone the Repository
+```bash
+git clone https://github.com/Anvesh-999/fullstack-dev-playground.git
+cd "Lottery Game"
+```
+2. Install Dependencies
+```bash
+npm install
+```
+3. Run the Development Server
+```bash
+npm run dev
+```
+Your app should now be running at:
+```bash
+http://localhost:5173/
+```
+----
+
+🧠 How It Works
+
+The user clicks “Generate Ticket”.
+
+React generates a new ticket with random numbers.
+
+The game checks if the ticket matches the winning condition.
+
+Message updates accordingly:
+
+🟢 You Win!
+
+🔴 Try Again!
+
+⭐ Support
+
+If you like this project, consider giving the repo a star ⭐ — it helps a lot!
+
