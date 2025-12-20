@@ -6,7 +6,7 @@ export default function Form(){
         username: ""
     });
     let inputHandler= (e)=>{
-        setFormData({
+        setFormData({ 
             ...formData,
             [e.target.name]: e.target.value
         });
