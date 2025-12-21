@@ -1,16 +1,80 @@
-# React + Vite
+# Forms Playground — React + Vite Mini Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and practical **React Forms Playground** built using **React and Vite** to experiment with different form components and patterns.  
+This project focuses on **handling user input, managing form state, validation logic, and component reusability**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multiple form components with different input types
+- Controlled inputs using React state
+- Real-time form updates and validation
+- Modular and reusable component structure
+- Clean and minimal UI styling
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Anvesh-999/fullstack-dev-playground.git
+cd forms-react
+```
+2. Install Dependencies
+```bash
+npm install
+```
+3. Run the Development Server
+```bash
+npm run dev
+```
+The application will be available at:
+```bash
+http://localhost:5173/
+```
+----
+
+How It Works
+
+- Users interact with different form components
+
+- React manages form state using controlled inputs
+
+- Validation logic checks user input
+
+- Feedback is displayed instantly on submission
+
+----
+
+Components Overview
+
+- Input fields (text, email, password, etc.)
+
+- Form containers
+
+- Validation and feedback components
+
+- Reusable UI elements
+
+Purpose
+
+This project is part of a web development playground, created to strengthen:
+
+- React fundamentals
+
+- Form handling techniques
+
+- Component-based architecture
+
+- State and event management
+
+----
+
+If you find this project useful, consider giving the repository a ⭐.
