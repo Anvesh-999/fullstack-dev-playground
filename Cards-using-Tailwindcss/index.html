@@ -6,8 +6,19 @@
   <link href="/src/style.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <div class="mt-20 mx-52 flex flex-wrap rounded border-2 border-black">
+    <!-- Quote container -->
+    <div class="w-full bg-gradient-to-r from-purple-500 to-pink-500 h-24 text-2xl flex justify-center items-center font-bold text-white rounded  rounded-t">News you can Trust.</div>
+    <!-- content -->
+    <div class="w-full text-center mt-6 flex flex-col items-center justify-between space-y-6">
+      <h1 class="text-lg font-semibold">Stay up to date with the latest news.</h1>
+      <p>Subscribe to our newsletter for the latest news straight into your inbox.</p>
+      <form class="flex flex-wrap">
+        <input type="text" placeholder="Enter your email" class="w-full mx-52 bg-slate-200 text-center placeholder:text-gray-500 my-4 py-2 rounded">
+        <button class="bg-blue-500 w-full mx-52 mt-2 py-2 rounded-2xl">Subscribe</button>
+      </form>
+      <p class="text-sm mt-6">We value your privacy and will never share your email address with third parties.</p>
+    </div>
+  </div>
 </body>
 </html>
